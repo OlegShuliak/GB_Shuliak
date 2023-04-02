@@ -20,6 +20,6 @@ int coordX1 = ReadData("Введите координату x1: ");
 int coordY1 = ReadData("Введите координату y1: ");
 int coordX2 = ReadData("Введите координату x2: ");
 int coordY2 = ReadData("Введите координату y2: ");
-Console.WriteLine(CalcLen2D(coordX1, coordX2, coordY1, coordY2));
+Console.WriteLine(CalcLen2D(coordX1, coordY1, coordX2, coordY2));
 
 
