@@ -26,13 +26,6 @@ else Console.WriteLine($"Число {numTest} не является пятизн
 
 
 // Вариант 2* - Сделать вариант через СЛОВАРЬ четырехзначных палиндромов 
-//Метод общения с пользователем  - читает дынные от пользователя
-int ReadData(string msg)
-{
-    Console.WriteLine(msg);
-    int res = int.Parse(Console.ReadLine() ?? "0");
-    return res;
-}
 
 // Метод поиска палиндромных четырехзначних числе в словаре по совпадению ключа
 void PalTest(int num)
