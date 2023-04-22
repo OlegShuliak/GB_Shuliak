@@ -78,7 +78,7 @@ void Print2DArray(int[,] arr)
     }
 }
 
-int[,] spiralMatrix = GenSpiral2DArr(10, 10);
+int[,] spiralMatrix = GenSpiral2DArr(10, 5);
 Print2DArray(spiralMatrix);
 
 
