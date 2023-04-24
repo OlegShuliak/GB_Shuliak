@@ -1,5 +1,14 @@
 ﻿// Напишите программу, которая заполнит спирально массив 4 на 4.
 
+//Метод общения с пользователем  - читает дынные от пользователя
+int ReadData(string msg)
+{
+    Console.WriteLine(msg);
+    int res = int.Parse(Console.ReadLine() ?? "0");
+    return res;
+}
+
+
 // Метод заполнения двумерного массива числами спиралью
 int[,] GenSpiral2DArr(int countRow, int countColumn)
 {
@@ -50,7 +59,7 @@ int[,] GenSpiral2DArr(int countRow, int countColumn)
             iMax--;
         }
 
-        else 
+        else                                       // Проход столбца вверх
         {
             int j = jMin;
             for (int i = iMax; i >= iMin; i--)
@@ -78,7 +87,13 @@ void Print2DArray(int[,] arr)
     }
 }
 
-int[,] spiralMatrix = GenSpiral2DArr(10, 5);
+// Ввод данных
+int row = ReadData("Введите количество строк: ");
+int col = ReadData("Введите количество столбцов: ");
+
+// Генерация и вывод массива
+int[,] spiralMatrix = GenSpiral2DArr(row, col);
+Console.WriteLine("Массив заполненный спирально: ");
 Print2DArray(spiralMatrix);
 
 
